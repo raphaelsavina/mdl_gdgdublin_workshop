@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A simple tutorial for Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDL-Static Website - GDG Dublin</title>
+
+    <!-- Another must have, the material Icons font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Here is the link to CSS, you can choose your theme here: -->
+    <!-- http://www.getmdl.io/customize/index.html -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-green.min.css" />
+
+    <!-- and you need the minified .js -->
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- We now need more styles to extend elements -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Let's add jQuery to manipulate the DOM -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+                <span class="mdl-layout__title">Material Design Lite</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation ">
+                    <a class="mdl-navigation__link" href="#">Hello</a>
+                    <a class="mdl-navigation__link" href="#">World.</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <span class="mdl-layout__title">Material Design Lite</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#">Hello</a>
+                <a class="mdl-navigation__link" href="#">World.</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--4-col">
+
+                </div>
+
+                <div class="mdl-cell mdl-cell--2-col">
+
+                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch" id="switch-label">
+                        <input type="checkbox" id="switch" class="mdl-switch__input">
+                        <span class="mdl-switch__label">Yes/No</span>
+                    </label>
+                </div>
+
+                <div class="mdl-cell mdl-cell--2-col">
+                    <button class="mdl-button mdl-js-button mdl-button--raised click">
+                        Clicky
+                    </button>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col">
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+    $(function() {
+        $(".click").on("click", function() {
+            console.log("click");
+
+            $('#switch-label').toggleClass("is-checked")
+
+            // if ($("#switch")[0].checked) {
+            //     $('#switch-label')[0].MaterialSwitch.off();
+            // } else {
+            //     $('#switch-label')[0].MaterialSwitch.on();
+            // }
+
+            //console.log($('#switch-label')[0].MaterialSwitch.inputElement_.checked);
+            console.log($("#switch")[0].checked);
+
+        });
+    });
+    </script>
+
+
+</body>
+
+</html>
