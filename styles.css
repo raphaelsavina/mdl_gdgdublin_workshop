@@ -1,0 +1,13 @@
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+
+.demo-card-form.mdl-card {
+  width: 80%;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #000;
+  height: 340px;
+  background: url('http://lorempixel.com/400/400/cats') center / cover;
+}
