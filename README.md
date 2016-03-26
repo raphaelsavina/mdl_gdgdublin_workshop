@@ -20,4 +20,6 @@ https://github.com/google/material-design-lite
 ## Extra links
 Material Design: https://www.google.com/design/spec/material-design/introduction.html
 
+Icons: https://design.google.com/icons/
+
 BEM: https://en.bem.info/method/key-concepts/
